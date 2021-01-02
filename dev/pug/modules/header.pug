@@ -1,0 +1,41 @@
+section.menu
+    a(href='#').menu__logo
+        img.lazy(data-src='img/logo.png')
+    nav
+        ul.menu__list
+            li.menu__item
+                a(href='#') О компании
+            li.menu__item
+                a(href='#') Карьера
+            li.menu__item
+                a(href='#') Проекты
+            li.menu__item
+                a(href='#') Арендаторам
+            li.menu__item
+                a(href='#') Карта лояльности
+            li.menu__item
+                a(href='#') Пресс-центр
+            li.menu__item
+                a(href='#') Контакты
+
+
+    .menu__contacts
+        button.menu__btn Предложить земельный участок
+        a(href='tel:+3754172333333').menu__phone +375 (17) <span>233-33-33</span>
+        a(href='#').menu__callback перезвоните мне
+
+        .menu__languages
+            a(href='#').menu__lang RU
+            a(href='#').menu__lang.menu__lang_en EN
+
+        .menu__social
+            a(href='#').menu__link
+                +icon('fb')
+            a(href='#').menu__link
+                +icon('insta')
+
+
+    .burger
+        span
+        span
+        span

@@ -1,0 +1,173 @@
+.footer {
+	position: relative;
+
+	@include xs-block(){
+		padding-top: 65px;
+	}
+	&__name {
+		font-weight: 600;
+		line-height: 22px;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+	}
+	&__contacts {
+		z-index: 1;
+		width: 677px;
+		height: 545px;
+		background-color: #ffffff;
+		position: absolute;
+		right: 0;
+		top: 52px;
+		padding: 46px 80px 32px 70px;
+		overflow: auto;
+
+		@include xmd-block(){
+			width: 620px;
+		}
+		@include sm-block(){
+			width: 470px;
+		}
+		@include xs-block(){
+			width: 100%;
+			padding: 10px;
+			height: 115px;
+			position: relative;
+			top: auto;
+			right: auto;
+		}
+	}
+	&__map {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		width: 100%;
+		min-height: 734px;
+		z-index: 0;
+
+		@include sm-block(){
+			display: none;
+		}
+	}
+	&__item {
+		margin-bottom: 25px;
+		width: 532px;
+		visibility: visible;
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: auto;
+			margin-top: 30px;
+			background-color: #eee;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+
+		@include xmd-block(){
+			width: 500px;
+		}
+		@include sm-block(){
+			width: 355px;
+		}
+		@include sm-block(){
+			display: none;
+		}
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__descr {
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: -0.01em;
+		margin-top: 34px;
+		color: $font-menu;
+		transition: 0.3s all;
+	}
+	&__phones {
+		margin-top: 25px;
+		width: 290px;
+		display: flex;
+		justify-content: space-between;
+		color: $dark-grey;
+	}
+	&__phone {
+		text-decoration: none;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+	}
+
+	&__copyright {
+		min-height: 197px;
+		background-color: $grey-footer;
+		padding: 50px 46px 46px 46px;
+	}
+	&__copyright-info {
+		color: #ffffff;
+		width: 625px;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+		opacity: 0.8;
+		@include sm-block(){
+			width: 85%;
+		}
+
+	}
+	&__copyright-link {
+		margin-top: 60px;
+		color: #ffffff;
+		font-weight: 300;
+		font-size: 15px;
+		opacity: 0.8;
+		a {
+			color: $main-green;
+			font-weight: 300;
+			font-size: 15px;
+		}
+	}
+	&__more {
+		animation: slideUp 0.5s;
+		transition: 0.3s opacity, 0.5s height;
+		opacity: 1;
+		display: block;
+	}
+
+	.hidden {
+		opacity: 0;
+		display: none;
+
+	}
+	&__arrow {
+		cursor: pointer;
+		transition: 0.3s all;
+	}
+	hr {
+		display: none;
+		height: 1px;
+		@include sm-block(){
+			display: block;
+			color: #BDBDBD;
+		}
+	}
+	.title {
+		position: relative;
+		&:after {
+			content: '';
+			display: none;
+			width: 195px;
+			height: 3px;
+			background-color: $main-green;
+			position: absolute;
+			top: 65px;
+			left: 20%;
+			@include xs-block(){
+				display: block;
+			}
+		}
+	}
+}

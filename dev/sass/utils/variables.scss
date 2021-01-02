@@ -1,0 +1,83 @@
+$font: "Roboto";
+$fontSizeMain: 18;
+
+//COLOR
+$font-menu: #4F4F4F;
+$dark-grey: #55555B;
+$main-green: #74BB20;
+$grey-footer: #53565A;
+$light-line: #EEEEEE;
+$grey-date: #828282;
+
+
+//SIZE TO VW
+:root {
+  --vwIdth: 1920;
+  @include xmd-block() {
+    --vwIdth: 1100;
+  }
+  @include sm-block() {
+    --vwIdth: 800;
+  }
+  @include xxs-block() {
+    --vwIdth: 375;
+  }
+}
+
+
+//MEDIA CLASS
+.md-show {
+  display: none !important;
+}
+.xmd-show {
+  display: none !important;
+}
+.sm-show {
+  display: none !important;
+}
+.xs-show {
+  display: none !important;
+}
+.xxs-show {
+  display: none !important;
+}
+@include md-block() {
+  .md-show {
+    display: flex !important;
+  }
+  .md-hide {
+    display: none !important;
+  }
+}
+@include xmd-block() {
+  .xmd-show {
+    display: flex !important;
+  }
+  .xmd-hide {
+    display: none !important;
+  }
+}
+@include sm-block() {
+  .sm-show {
+    display: flex !important;
+  }
+  .sm-hide {
+    display: none !important;
+  }
+}
+@include xs-block() {
+  .xs-show {
+    display: flex !important;
+  }
+  .xs-hide {
+    display: none !important;
+  }
+}
+@include xxs-block() {
+  .xxs-show {
+    display: flex !important;
+  }
+  .xxs-hide {
+    display: none !important;
+  }
+}

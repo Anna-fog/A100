@@ -1,0 +1,149 @@
+.news {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+
+  @include lg-block(){
+    width: 100%;
+  }
+  @include md-block(){
+    width: 100%;
+  }
+  @include xmd-block(){
+    width: 100%;
+  }
+  @include sm-block(){
+    width: 100%;
+  }
+  @include xxs-block(){
+    width: 100%;
+  }
+  @include xxxs-block(){
+    padding: 50px 10px 0 10px;
+  }
+
+
+  &__main {
+    width: 60%;
+    @include xs-block(){
+      width: 95%;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-decoration: none;
+    width: 387px;
+    margin-bottom: 55px;
+    transition: 0.3s all;
+    overflow: hidden;
+    &:hover {
+      .news__img {
+        transform: scale(1.1);
+      }
+      .date {
+        &:before {
+          background-color: $main-green;
+        }
+      }
+    }
+    @include md-block(){
+      width: 100%;
+    }
+  }
+
+  &__img {
+    transition: 0.5s all;
+    @include md-block(){
+      width: 100%;
+    }
+  }
+  &__side-descr {
+    text-decoration: none;
+    color: $dark-grey;
+  }
+  &__descr {
+    margin-top: 30px;
+    line-height: 143.69%;
+  }
+  &__side {
+    margin-top: 18px;
+    width: 37%;
+    padding-left: 50px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1px;
+      background-color: #E0E0E0;
+      //height: 990px;
+      height: 100%;
+      transform: translate(-28px, -5px);
+    }
+    @include md-block(){
+      width: 45%;
+    }
+    @include xs-block(){
+     display: none;
+    }
+  }
+  &__side-descr {
+    //margin-top: 27px;
+    line-height: 143%;
+    transition: 0.3s all;
+    &:hover {
+      color: $main-green;
+    }
+  }
+  &__btn-more {
+    display: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 338px;
+    height: 46px;
+    border: 1px solid #55555B;
+    background-color: #ffffff;
+  }
+}
+
+
+// Dates
+
+.date {
+  margin-top: 30px;
+  color: $grey-date;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 27px;
+  &__img {
+    //transform: scale();
+  }
+  &_main {
+    margin-bottom: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 45%;
+      background-color: #000;
+      height: 1px;
+      margin-bottom: 17px;
+      transition: 0.3s all;
+    }
+  }
+  @include xs-block(){
+    .title {
+      text-align: center;
+    }
+  }
+}

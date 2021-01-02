@@ -1,0 +1,19 @@
+@keyframes fadeUp {
+  from {bottom: 10px;}
+  to {bottom: 49px;}
+};
+
+@keyframes slideUp {
+  from {transform: translateY(-30px);}
+  to {transform: translateY(0);}
+};
+
+@keyframes slideToRight {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
+};
+
+@keyframes slideToLeft {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0);}
+};

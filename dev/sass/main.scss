@@ -1,0 +1,26 @@
+@import 'smart-grid';
+@import './utils/variables';
+@import './utils/fonts';
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/dump';
+@import './utils/common';
+@import './utils/preloader';
+
+
+
+// Страницы
+@import './pages/index';
+@import './pages/form-style';
+@import './pages/form-validate';
+
+
+
+// Модули
+@import './modules/header';
+@import './modules/categories';
+@import './modules/news';
+@import './modules/footer';
+@import './modules/mobile-menu';
+@import './modules/slider';
+//@import './modules/animations;

@@ -1,0 +1,135 @@
+.categories {
+  display: grid;
+  //grid-template-columns: 522px repeat(2, 535px);
+  //grid-template-columns: repeat(3, minmax(350px, 1fr));
+  //grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  //grid-template-rows: 533px 384px;
+  gap: 6px;
+  grid-auto-rows: 475px;
+  grid-auto-flow: dense;
+  @include lg-block(){
+    width: 100%;
+  }
+  @include xs-block(){
+    padding-top: 86px;
+    grid-template-columns: 340px;
+    grid-template-rows: repeat(4, 180px);
+    gap: 16px;
+  }
+  @include md-block(){
+    width: 100%;
+  }
+  @include xmd-block(){
+    width: 100%;
+  }
+  @include sm-block(){
+    width: 100%;
+    grid-auto-rows: 350px;
+  }
+  @include xs-block(){
+    width: 100%;
+  }
+  @include xxs-block(){
+    width: 100%;
+  }
+  @include xxxs-block(){
+    padding: 90px 10px 0 10px;
+  }
+
+
+  &__item {
+    text-decoration: none;
+    position: relative;
+    grid-column-end: auto;
+    @include xs-block(){
+      grid-column-end: span 2;
+    }
+
+    img {
+      transition: 0.5s all;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include xs-block(){
+        width: 100%
+      }
+
+    }
+
+    &:hover {
+      img {
+        filter: brightness(0.6);
+      }
+    }
+  }
+  &__title {
+    position: absolute;
+    color: #FEFEFE;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 38px;
+    top: 22px;
+    left: 35px;
+    z-index: 2;
+    @include xs-block(){
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+  &__descr {
+    display: none;
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    bottom: 49px;
+    left: 35px;
+    width: 80%;
+    line-height: 22px;
+    animation: fadeUp 0.5s;
+
+
+    @include xs-block(){
+      width: 70%;
+    }
+    @include xs-block(){
+      font-size: 12px;
+      line-height: 22px;
+      bottom: 25px;
+      left: 15px;
+      width: auto;
+    }
+  }
+  .vertical {
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+    @include sm-block(){
+      grid-column-end: span auto;
+      grid-row-end: auto;
+    }
+    @include xs-block(){
+      grid-column-end: span 2;
+    }
+    @include xs-block(){
+
+    }
+
+
+  }
+  .horizontal {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+
+    @include sm-block(){
+      grid-column-end: auto;
+      grid-row-end: auto;
+    }
+    @include xs-block(){
+      grid-column-end: span 2;
+    }
+    @include xs-block(){
+      .title {
+      }
+    }
+  }
+}

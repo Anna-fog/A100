@@ -1,0 +1,73 @@
+.slider {
+	display: none;
+	padding-bottom: 35px;
+	position: relative;
+	transition: 0.3s all;
+
+	@include xs-block(){
+		display: block;
+	}
+
+	&__btn {
+		background: none;
+		border: none;
+		position: absolute;
+		top: 5px;
+		&:focus {
+			outline: none;
+		}
+	}
+	.next {
+		right: 20px;
+	}
+	.prev  {
+		left: 20px;
+	}
+	&__header {
+		font-size: 15px;
+		color: $font-menu;
+		text-transform: uppercase;
+		font-weight: 300;
+		text-align: center;
+		width: 195px;
+		margin: 0 auto;
+	}
+	&__map {
+		margin-top: 28px;
+		height: 192px;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		width: 100%;
+	}
+	&__descr {
+		letter-spacing: -0.01em;
+		font-size: 14px;
+		color: $font-menu;
+		margin-top: 31px;
+	}
+	&__phones {
+		margin-top: 11px;
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__phone  {
+		text-decoration: none;
+		font-size: 14px;
+		margin-right: 25px;
+	}
+	.more {
+		&_slider {
+			margin-top: 45px;
+			font-size: 12px;
+		}
+	}
+
+	.animatedToRight {
+		animation: slideToRight 0.5s;
+	}
+
+	.animatedToLeft {
+		animation: slideToLeft 0.5s;
+	}
+
+}
