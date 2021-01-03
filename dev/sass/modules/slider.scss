@@ -1,6 +1,17 @@
+.mobile-contacts {
+	&__header {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 500;
+		font-size: 28px;
+		margin-bottom: 35px;
+	}
+
+}
+
 .slider {
 	display: none;
-	padding-bottom: 35px;
+	padding-bottom: 0;
 	position: relative;
 	transition: 0.3s all;
 
@@ -8,33 +19,35 @@
 		display: block;
 	}
 
-	&__btn {
-		background: none;
-		border: none;
+	&__item {
+		border-top: 1px solid #BDBDBD;
+		position: relative;
+	}
+
+	&__info-wrapper {
+		width: calc(100% - 30px);
+		height: auto;
+		left: 15px;
+		padding: 30px 17px;
 		position: absolute;
-		top: 5px;
-		&:focus {
-			outline: none;
-		}
+		bottom: 0;
+		background-color: white;
 	}
-	.next {
-		right: 20px;
-	}
-	.prev  {
-		left: 20px;
-	}
+
 	&__header {
 		font-size: 15px;
 		color: $font-menu;
 		text-transform: uppercase;
-		font-weight: 300;
+		font-weight: 500;
 		text-align: center;
-		width: 195px;
+		max-width: 200px;
 		margin: 0 auto;
+		border-top: 2px solid #74BB20;
+		padding-top: 20px;
 	}
 	&__map {
 		margin-top: 28px;
-		height: 192px;
+		height: 500px;
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		width: 100%;
@@ -43,7 +56,6 @@
 		letter-spacing: -0.01em;
 		font-size: 14px;
 		color: $font-menu;
-		margin-top: 31px;
 	}
 	&__phones {
 		margin-top: 11px;
@@ -53,12 +65,12 @@
 	&__phone  {
 		text-decoration: none;
 		font-size: 14px;
-		margin-right: 25px;
+		margin-right: 10px;
 	}
 	.more {
 		&_slider {
-			margin-top: 45px;
-			font-size: 12px;
+			margin-top: 25px;
+			font-size: 15px;
 		}
 	}
 
@@ -68,6 +80,15 @@
 
 	.animatedToLeft {
 		animation: slideToLeft 0.5s;
+	}
+}
+
+.slick-arrow {
+	position: absolute;
+	height: auto;
+	top: 37px;
+	&:before {
+		display: none;
 	}
 
 }

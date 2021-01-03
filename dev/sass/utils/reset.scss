@@ -93,15 +93,15 @@ svg:not(:root) {
   overflow: hidden
 }
 button, select, textarea, input {
-  text-transform: none;
-  background: none;
-  padding: 5px;
-  box-shadow: none;
-  border: 1px solid;
-  resize: none;
-  display: block;
-  font-size: 1em;
-  font-family: inherit;
+  //text-transform: none;
+  //background: none;
+  //padding: 5px;
+  //box-shadow: none;
+  //border: 1px solid;
+  //resize: none;
+  //display: block;
+  //font-size: 1em;
+  //font-family: inherit;
 }
 
 [type=reset], [type=submit], button, html [type=button] {

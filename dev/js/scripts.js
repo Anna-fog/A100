@@ -86,44 +86,45 @@ $(document).ready(function(){
 
 
 	// Slider
-
-	let slideIndex = 1;
-	const items = document.querySelectorAll('.slider__item'), prevBtn = document.querySelector('#prev'),
-		nextBtn = document.querySelector('#next');
-
-	showSlides(slideIndex);
-
-	function showSlides(n) {
-		if (n > items.length) {
-			slideIndex = 1;
-		}
-		if (n < 1) {
-			slideIndex = items.length;
-		}
-
-		items.forEach(item => {
-			item.style.display = 'none';
-		});
-
-		items[slideIndex - 1].style.display = 'block';
-	}
-
-
-	prevBtn.addEventListener('click', () => {
-		plusSlides(-1);
-		items[slideIndex - 1].classList.add('animatedToLeft');
-		items[slideIndex - 1].classList.remove('animatedToRight');
-	});
-
-	nextBtn.addEventListener('click', () => {
-		plusSlides(1);
-		items[slideIndex - 1].classList.add('animatedToRight');
-		items[slideIndex - 1].classList.remove('animatedToLeft');
-	});
-
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
+	//
+	// let slideIndex = 1;
+	// const items = document.querySelectorAll('.slider__item'),
+	// 	prevBtn = document.querySelector('#prev'),
+	// 	nextBtn = document.querySelector('#next');
+	//
+	// showSlides(slideIndex);
+	//
+	// function showSlides(n) {
+	// 	if (n > items.length) {
+	// 		slideIndex = 1;
+	// 	}
+	// 	if (n < 1) {
+	// 		slideIndex = items.length;
+	// 	}
+	//
+	// 	items.forEach(item => {
+	// 		item.style.display = 'none';
+	// 	});
+	//
+	// 	items[slideIndex - 1].style.display = 'block';
+	// }
+	//
+	//
+	// prevBtn.addEventListener('click', () => {
+	// 	plusSlides(-1);
+	// 	items[slideIndex - 1].classList.add('animatedToLeft');
+	// 	items[slideIndex - 1].classList.remove('animatedToRight');
+	// });
+	//
+	// nextBtn.addEventListener('click', () => {
+	// 	plusSlides(1);
+	// 	items[slideIndex - 1].classList.add('animatedToRight');
+	// 	items[slideIndex - 1].classList.remove('animatedToLeft');
+	// });
+	//
+	// function plusSlides(n) {
+	// 	showSlides(slideIndex += n);
+	// }
 
 
 
@@ -148,7 +149,12 @@ $(document).ready(function(){
 
 
 	$('.slider').slick({
-
+		infinite: true,
+		slidesToShow: 1,
+		speed: 300,
+		arrows: true,
+		prevArrow: '<button type="button" class="slick-prev arrow-btn"><img src="img/svg/left.svg"></button>',
+		nextArrow: '<button type="button" class="slick-next arrow-btn"><img src="img/svg/right.svg"></button>',
 	});
 
 

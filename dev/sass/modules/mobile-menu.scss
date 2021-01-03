@@ -43,6 +43,39 @@
     position: relative;
   }
 
+  &__social {
+    display: none;
+
+    @include xxs-block() {
+      display: flex;
+      width: 52px;
+      justify-content: space-between;
+
+
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .icon {
+        fill: $main-green;
+      }
+    }
+    .icon {
+      height: 16px;
+      transition: 0.3s all;
+
+      @include xmd-block() {
+        height: 20px;
+      }
+    }
+  }
+
+
+
   &__menu {
     list-style-type: none;
     height: auto;
@@ -69,7 +102,7 @@
 
     a {
       text-decoration: none;
-      font-size: 15px;
+      font-size: 16px;
     }
 
 
@@ -81,6 +114,9 @@
   &__btn {
     width: 256px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $main-green;
     color: #ffffff;
     border: none;
