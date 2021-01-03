@@ -21,20 +21,16 @@
 		padding: 46px 80px 32px 70px;
 		overflow: auto;
 
-		@include xmd-block(){
+		@include xmd-block() {
 			width: 620px;
 		}
-		@include sm-block(){
+		@include sm-block() {
 			width: 470px;
 		}
-		@include xs-block(){
-			width: 100%;
-			padding: 10px;
-			height: 115px;
-			position: relative;
-			top: auto;
-			right: auto;
+		@include xs-block() {
+			display: none;
 		}
+
 	}
 	&__map {
 		-webkit-filter: grayscale(100%);
@@ -42,10 +38,6 @@
 		width: 100%;
 		min-height: 734px;
 		z-index: 0;
-
-		@include sm-block(){
-			display: none;
-		}
 	}
 	&__item {
 		margin-bottom: 25px;
@@ -71,9 +63,7 @@
 		@include sm-block(){
 			width: 355px;
 		}
-		@include sm-block(){
-			display: none;
-		}
+
 	}
 	&__header {
 		display: flex;
@@ -163,9 +153,9 @@
 			height: 3px;
 			background-color: $main-green;
 			position: absolute;
-			top: 65px;
-			left: 20%;
-			@include xs-block(){
+			top: 49px;
+			left: 0;
+			@include xmd-block(){
 				display: block;
 			}
 		}
