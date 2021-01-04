@@ -81,6 +81,14 @@
   &__descr {
     margin-top: 30px;
     line-height: 143.69%;
+
+    @include xmd-block() {
+      margin-top: 15px;
+    }
+
+    @include xxxs-block() {
+      font-size: 16px;
+    }
   }
   &__side {
     margin-top: 18px;
@@ -95,10 +103,10 @@
       background-color: #E0E0E0;
       height: 100%;
       transform: translate(-28px, -5px);
-      padding-bottom: 60px;
     }
     @include md-block(){
       width: 45%;
+      padding-bottom: 60px;
     }
     @include xs-block(){
      display: none;

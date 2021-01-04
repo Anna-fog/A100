@@ -11,14 +11,14 @@
 		text-transform: uppercase;
 	}
 	&__contacts {
-		z-index: 1;
+		z-index: 10;
 		width: 677px;
 		height: 545px;
 		background-color: #ffffff;
 		position: absolute;
 		right: 0;
 		top: 52px;
-		padding: 46px 80px 32px 70px;
+		padding: 46px 60px 32px 70px;
 		overflow: auto;
 
 		@include xmd-block() {
@@ -45,7 +45,7 @@
 	}
 	&__item {
 		margin-bottom: 25px;
-		width: 532px;
+		width: 100%;
 		visibility: visible;
 		&:after {
 			content: '';
@@ -139,6 +139,7 @@
 	&__arrow {
 		cursor: pointer;
 		transition: 0.3s all;
+		height: auto;
 	}
 	hr {
 		display: none;

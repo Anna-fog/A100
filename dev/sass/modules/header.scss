@@ -206,12 +206,11 @@
 
 	&__social {
 		margin-top: 4vh;
-		width: 52px;
+		width: 70px;
 		display: flex;
 		justify-content: space-between;
 		@include xmd-block(){
 			margin-top: 0;
-			width: 70px;
 		}
 		@include xxs-block() {
 			display: none;

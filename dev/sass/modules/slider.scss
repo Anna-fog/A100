@@ -1,10 +1,14 @@
 .mobile-contacts {
 	&__header {
+		display: none;
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: 500;
 		font-size: 28px;
 		margin-bottom: 35px;
+		@include xs-block() {
+			display: block;
+		}
 	}
 
 }
