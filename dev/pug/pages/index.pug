@@ -1,9 +1,17 @@
 extends ../layout/main
 
 block variables
-    - var title = 'Главная';
+    - var title = 'А-100 ДЕВЕЛОПМЕНТ';
+
+block libs-css
+    link(rel="stylesheet" type='text/css' href="./css/main.css")
+block libs-js
+    script(async src="./libs/jquery.mCustomScrollbar.concat.min.js")
 
 block content
-    ul.style-temp
-        li
-            a(href="./main.html") main.html - главная
+    include ../modules/header
+    main
+        include ../modules/categories
+        include ../modules/news
+        include ../modules/footer
+        include ../modules/mobile-menu

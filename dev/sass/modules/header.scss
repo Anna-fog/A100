@@ -26,8 +26,10 @@
 			transform: scale(.6);
 			width: auto;
 		}
-		@include xxxs-block() {
+		@include xxs-block() {
 			margin-left: -20px;
+		}
+		@include xxxs-block() {
 			transform: scale(.5);
 		}
 	}
@@ -107,7 +109,8 @@
 		}
 		@include xxxs-block() {
 			margin-left: -20px;
-			margin-right: 56px;
+			margin-right: 40px;
+			align-items: flex-start;
 			flex-direction: column;
 		}
 	}
@@ -186,6 +189,9 @@
 				left: 50%;
 				transform: none;
 			}
+		}
+		@include xxxs-block() {
+			margin: 0;
 		}
 	}
 

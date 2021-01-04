@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 65px;
-  @include xxxs-block(){
+  @include xxxs-block() {
     padding: 50px 10px 0 10px;
   }
 
@@ -16,6 +16,8 @@
     @include xs-block() {
       width: 100%;
       padding: 0 20px;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -76,6 +78,9 @@
     width: 39%;
     padding-left: 50px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
     &:before {
       content: '';
       display: block;
@@ -85,11 +90,10 @@
       height: 100%;
       transform: translate(-28px, -5px);
     }
-    @include md-block(){
+    @include md-block() {
       width: 45%;
-      padding-bottom: 60px;
     }
-    @include xs-block(){
+    @include xs-block() {
      display: none;
     }
   }
@@ -102,14 +106,53 @@
     }
   }
 
-  &__btn-more {
+  &__more-main {
     display: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    width: 338px;
-    height: 46px;
+    font-size: 14px;
+    text-align: center;
     border: 1px solid #55555B;
     background-color: #ffffff;
+    width: 338px;
+    height: 46px;
+    cursor: pointer;
+    @include xs-block() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+    @include xxxs-block() {
+      width: 280px;
+    }
+  }
+
+  &__btn-more {
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 9px;
+    margin-top: 20px;
+    transition: .5s all;
+    &:hover {
+      color: $main-green;
+      &:before {
+        background-color: $main-green;
+        width: 140px;
+      }
+    }
+
+
+    &:before {
+      content: '';
+      width: 105px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #55555B;
+      z-index: 1;
+      transition: .5s all;
+    }
   }
 }
 
