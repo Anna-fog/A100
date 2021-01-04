@@ -1,15 +1,16 @@
 .footer {
 	position: relative;
-
 	@include xs-block(){
 		padding-top: 45px;
 	}
+
 	&__name {
 		font-weight: 600;
 		line-height: 22px;
 		letter-spacing: -0.01em;
 		text-transform: uppercase;
 	}
+
 	&__contacts {
 		z-index: 10;
 		width: 677px;
@@ -20,7 +21,6 @@
 		top: 52px;
 		padding: 46px 60px 32px 70px;
 		overflow: auto;
-
 		@include xmd-block() {
 			width: 620px;
 		}
@@ -30,19 +30,19 @@
 		@include xs-block() {
 			display: none;
 		}
-
 	}
+
 	&__map {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		width: 100%;
 		min-height: 734px;
 		z-index: 0;
-
 		@include xs-block() {
 			display: none;
 		}
 	}
+
 	&__item {
 		margin-bottom: 25px;
 		width: 100%;
@@ -60,19 +60,19 @@
 				display: none;
 			}
 		}
-
 		@include xmd-block(){
 			width: 500px;
 		}
 		@include sm-block(){
 			width: 355px;
 		}
-
 	}
+
 	&__header {
 		display: flex;
 		justify-content: space-between;
 	}
+
 	&__descr {
 		font-size: 16px;
 		line-height: 22px;
@@ -81,6 +81,7 @@
 		color: $font-menu;
 		transition: 0.3s all;
 	}
+
 	&__phones {
 		margin-top: 25px;
 		width: 290px;
@@ -88,6 +89,7 @@
 		justify-content: space-between;
 		color: $dark-grey;
 	}
+
 	&__phone {
 		text-decoration: none;
 		font-size: 16px;
@@ -100,6 +102,7 @@
 		background-color: $grey-footer;
 		padding: 50px 46px 46px 46px;
 	}
+
 	&__copyright-info {
 		color: #ffffff;
 		width: 625px;
@@ -110,8 +113,8 @@
 		@include sm-block(){
 			width: 85%;
 		}
-
 	}
+
 	&__copyright-link {
 		margin-top: 60px;
 		color: #ffffff;
@@ -124,6 +127,7 @@
 			font-size: 15px;
 		}
 	}
+
 	&__more {
 		animation: slideUp 0.5s;
 		transition: 0.3s opacity, 0.5s height;
@@ -134,13 +138,14 @@
 	.hidden {
 		opacity: 0;
 		display: none;
-
 	}
+
 	&__arrow {
 		cursor: pointer;
 		transition: 0.3s all;
 		height: auto;
 	}
+
 	hr {
 		display: none;
 		height: 1px;
@@ -149,6 +154,7 @@
 			color: #BDBDBD;
 		}
 	}
+
 	.title {
 		position: relative;
 		&:after {

@@ -4,34 +4,15 @@
   display: flex;
   justify-content: space-between;
   padding-top: 65px;
-
-  @include lg-block(){
-    width: 100%;
-  }
-  @include md-block(){
-    width: 100%;
-  }
-  @include xmd-block(){
-    width: 100%;
-  }
-  @include sm-block(){
-    width: 100%;
-  }
-  @include xxs-block(){
-    width: 100%;
-  }
   @include xxxs-block(){
     padding: 50px 10px 0 10px;
   }
 
-
   &__main {
     width: 60%;
-
     @include xmd-block() {
       padding-left: 20px;
     }
-
     @include xs-block() {
       width: 100%;
       padding: 0 20px;
@@ -49,12 +30,10 @@
 
   &__item {
     text-decoration: none;
-    //width: 450px;
     width: calc(50% - 10px);
     margin-bottom: 45px;
     transition: 0.3s all;
     overflow: hidden;
-
     &:hover {
       .news__img {
         transform: scale(1.1);
@@ -67,6 +46,7 @@
     }
     @include xxs-block(){
       width: 100%;
+      margin-bottom: 30px;
     }
   }
 
@@ -74,22 +54,23 @@
     transition: 0.5s all;
     width: 100%;
   }
+
   &__side-descr {
     text-decoration: none;
     color: $dark-grey;
   }
+
   &__descr {
     margin-top: 30px;
     line-height: 143.69%;
-
     @include xmd-block() {
       margin-top: 15px;
     }
-
     @include xxxs-block() {
       font-size: 16px;
     }
   }
+
   &__side {
     margin-top: 18px;
     width: 39%;
@@ -112,6 +93,7 @@
      display: none;
     }
   }
+
   &__side-descr {
     line-height: 143%;
     transition: 0.3s all;
@@ -119,6 +101,7 @@
       color: $main-green;
     }
   }
+
   &__btn-more {
     display: none;
     font-size: 12px;
@@ -142,6 +125,9 @@
 
   &_main {
     margin-bottom: 0;
+    @include xxs-block() {
+      margin-top: 15px;
+    }
 
     &:before {
       content: '';
@@ -151,6 +137,9 @@
       height: 1px;
       margin-bottom: 17px;
       transition: 0.3s all;
+      @include xxs-block() {
+        margin-bottom: 10px;
+      }
     }
   }
   @include xs-block(){

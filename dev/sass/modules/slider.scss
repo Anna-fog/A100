@@ -10,7 +10,6 @@
 			display: block;
 		}
 	}
-
 }
 
 .slider {
@@ -18,7 +17,6 @@
 	padding-bottom: 0;
 	position: relative;
 	transition: 0.3s all;
-
 	@include xs-block(){
 		display: block;
 	}
@@ -49,6 +47,7 @@
 		border-top: 2px solid #74BB20;
 		padding-top: 20px;
 	}
+
 	&__map {
 		margin-top: 28px;
 		height: 500px;
@@ -56,21 +55,25 @@
 		filter: grayscale(100%);
 		width: 100%;
 	}
+
 	&__descr {
 		letter-spacing: -0.01em;
 		font-size: 14px;
 		color: $font-menu;
 	}
+
 	&__phones {
 		margin-top: 11px;
 		display: flex;
 		justify-content: flex-start;
 	}
+
 	&__phone  {
 		text-decoration: none;
 		font-size: 14px;
 		margin-right: 10px;
 	}
+
 	.more {
 		&_slider {
 			margin-top: 25px;
@@ -94,5 +97,4 @@
 	&:before {
 		display: none;
 	}
-
 }

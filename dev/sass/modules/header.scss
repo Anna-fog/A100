@@ -31,6 +31,7 @@
 			transform: scale(.5);
 		}
 	}
+
 	&__list {
 		margin-top: 5vh;
 		display: flex;
@@ -39,6 +40,7 @@
 		height: 40vh;
 		padding-left: 15px;
 	}
+
 	&__item {
 		list-style-type: none;
 		transition: 0.5s all;
@@ -69,6 +71,7 @@
 			display: none;
 		}
 	}
+
 	&__btn {
 		background-color: $main-green;
 		color: #fff;
@@ -86,7 +89,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 		&:after {
 			display: none;
 		}
@@ -100,17 +102,16 @@
 				display: none;
 			}
 		}
-
 		@include xxs-block() {
 			margin-right: 50px;
 		}
-
 		@include xxxs-block() {
 			margin-left: -20px;
 			margin-right: 56px;
 			flex-direction: column;
 		}
 	}
+
 	&__btn {
 		margin-bottom: 5vh;
 		cursor: pointer;
@@ -118,6 +119,7 @@
 			outline: none;
 		}
 	}
+
 	&__phone {
 		margin-bottom: 8px;
 		text-decoration: none;
@@ -127,7 +129,6 @@
 			font-size: 18px;
 			margin-bottom: 0;
 		}
-
 		@include xmd-block(){
 			width: auto;
 			margin: 0 30px;
@@ -144,6 +145,7 @@
 			margin: 0;
 		}
 	}
+
 	&__callback {
 		font-size: 13px;
 		color: $main-green;
@@ -186,6 +188,7 @@
 			}
 		}
 	}
+
 	&__lang {
 		color: $main-green;
 		text-decoration: none;
@@ -216,10 +219,10 @@
 			display: none;
 		}
 	}
+
 	&__link {
 		display: flex;
 		align-items: center;
-
 		&:hover {
 			.icon {
 				fill: $main-green;
